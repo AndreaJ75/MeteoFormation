@@ -1,0 +1,203 @@
+body {
+    font-family: 'Abel', sans-serif;
+    color: #241f21;
+    width: 95%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 5px;
+    /* background-color: #ce0033; */
+    margin: 15px 0;
+}
+
+/* header h1 {
+    color: #eff0f2;
+} */
+
+h1,
+h2,
+h3 {
+    color: black;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 50px;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.listMesures,
+.lastMesure,
+.topPressure{
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none ;
+}
+
+.topHumidity {
+    display : flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    list-style-type: none ;
+}
+
+
+.topTemperature {
+    display : flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 20px;
+    list-style-type: none ;
+}
+
+.titreMesure {
+    display : flex;
+    flex-direction: column;
+    font-family: 'Big Shoulders Text', cursive;
+    text-align: center;
+    font-size: 30px;
+    list-style-type: none ;
+    margin-top: 2em;
+    margin-bottom: 1.1em;
+}
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0;
+    list-style-type: none;
+    
+}
+
+nav>ul>li {
+    list-style-type: none;
+    padding: 0 75px;
+    font-size: 1.7em;
+    color: blue;
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    color: skyblue;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav>ul>li>a:h   over {
+    color: #ce0033;
+    list-style-type: none;
+
+}
+
+.selected {
+    text-decoration: underline;
+    border-radius: 3px;
+}
+
+code {
+    /* width: fit-content; */
+    white-space: pre-wrap;
+    padding: 3px 20px;
+    border-radius: 3px;
+}
+
+code.hljs {
+    padding: 0 20px;
+}
+/* 
+.inline-code {
+    font-family: monospace;
+    color: #e6c07b;
+    /* background-color: #241f21; */
+    /* border-radius: 3px;
+    padding: 2px 5px;
+    font-weight: 500;
+} */ */
+
+#tableMeteoList {
+    display : flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid;
+    margin-top:50px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    align-items: center;
+   
+}
+#headMeteoList {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+th, 
+td,
+tr {
+    border-collapse: collapse;
+    justify-content: center;
+    border: solid 1px; 
+    padding: 2px 10px;
+}
+
+.detail{
+    display : contents;
+}
+
+@media screen and (max-width: 1024px)
+{
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+        margin: auto;
+    }
+
+    header {
+        height: 90px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    nav>ul>li {
+        padding: 0 10px 20px;
+    }
+}
+
+@media screen and (max-width: 560px)
+{
+    nav>ul {
+        flex-direction: column;
+    }
+
+    nav>ul>li {
+        padding: 10px 5px;
+    }
+}
